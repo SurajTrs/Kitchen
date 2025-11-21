@@ -1,0 +1,5 @@
+(node:82548) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Your app listening on port 8000
+Connected to MongoDB successfully
+Data fetched and stored in global variables successfully
