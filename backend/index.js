@@ -13,8 +13,9 @@ app.use(
     origin: [
       "http://localhost:3000",
       "https://foodiii.vercel.app",
-      "*",
-      "http://localhost:5173",
+      "https://highlight-kitchen.vercel.app",
+      "https://highlight-kitchen.netlify.app",
+      "*"
     ],
     methods: ["POST", "GET", "PUT", "DELETE"],
     credentials: true,

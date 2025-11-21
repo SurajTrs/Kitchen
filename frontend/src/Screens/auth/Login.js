@@ -21,7 +21,8 @@ const Login = () => {
     setError("");
 
     try {
-      const response = await fetch("https://foodiii.onrender.com/api/loginuser", {
+      const API_URL = process.env.REACT_APP_API_URL || 'https://highlight-kitchen-backend.onrender.com';
+      const response = await fetch(`${API_URL}/api/loginuser`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(credentials),

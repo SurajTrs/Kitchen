@@ -32,7 +32,8 @@ const Signup = () => {
     setLoading(true);
 
     try {
-      const response = await fetch("https://foodiii.onrender.com/api/creatuser", {
+      const API_URL = process.env.REACT_APP_API_URL || 'https://highlight-kitchen-backend.onrender.com';
+      const response = await fetch(`${API_URL}/api/creatuser`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name: credentials.name, email: credentials.email, location: credentials.geolocation, password: credentials.password, MobileNo: credentials.MobileNo }),
