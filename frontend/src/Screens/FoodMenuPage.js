@@ -13,7 +13,8 @@ const FoodMenu = () => {
   const loadData = async () => {
     try {
       setLoading(true);
-      let response = await fetch("https://foodiii.onrender.com/api/foodData", {
+      const API_URL = process.env.REACT_APP_API_URL || 'https://highlight-kitchen-backend.onrender.com';
+      let response = await fetch(`${API_URL}/api/foodData`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
