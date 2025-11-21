@@ -1,0 +1,60 @@
+.support-buttons {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 999;
+}
+
+.whatsapp-btn, .call-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  transition: all 0.3s;
+}
+
+.whatsapp-btn {
+  background: #25D366;
+  color: white;
+}
+
+.call-btn {
+  background: linear-gradient(135deg, #D99A2E, #FAD075);
+  color: white;
+}
+
+.whatsapp-btn:hover, .call-btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.3);
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .support-buttons {
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .whatsapp-btn span:last-child,
+  .call-btn span:last-child {
+    display: none;
+  }
+  
+  .whatsapp-btn, .call-btn {
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    justify-content: center;
+  }
+}

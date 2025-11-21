@@ -1,0 +1,100 @@
+.order-tracking {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+.order-tracking h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.tracking-timeline {
+  position: relative;
+}
+
+.tracking-step {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+  position: relative;
+  opacity: 0.4;
+  transition: all 0.3s;
+}
+
+.tracking-step.completed,
+.tracking-step.active {
+  opacity: 1;
+}
+
+.step-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  transition: all 0.3s;
+}
+
+.tracking-step.completed .step-icon {
+  background: linear-gradient(135deg, #D99A2E, #FAD075);
+  box-shadow: 0 4px 15px rgba(217,154,46,0.3);
+}
+
+.tracking-step.active .step-icon {
+  background: linear-gradient(135deg, #D99A2E, #FAD075);
+  animation: pulse 2s infinite;
+}
+
+.step-content h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 5px;
+}
+
+.step-content p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+}
+
+.step-line {
+  position: absolute;
+  left: 30px;
+  top: 80px;
+  width: 3px;
+  height: 40px;
+  background: #e0e0e0;
+}
+
+.tracking-step.completed .step-line {
+  background: linear-gradient(180deg, #D99A2E, #FAD075);
+}
+
+.estimated-time {
+  margin-top: 30px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.estimated-time p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}

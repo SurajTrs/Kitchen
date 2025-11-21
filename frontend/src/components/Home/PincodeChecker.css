@@ -1,0 +1,76 @@
+.pincode-checker {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+  text-align: center;
+  margin: 40px 0;
+}
+
+.pincode-checker h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+}
+
+.pincode-input-group {
+  display: flex;
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.pincode-input-group input {
+  flex: 1;
+  padding: 15px 20px;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+.pincode-input-group input:focus {
+  outline: none;
+  border-color: #D99A2E;
+  box-shadow: 0 0 0 4px rgba(217,154,46,0.1);
+}
+
+.pincode-input-group button {
+  padding: 15px 30px;
+  background: linear-gradient(135deg, #D99A2E, #FAD075);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.pincode-input-group button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(217,154,46,0.3);
+}
+
+.pincode-status {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 12px;
+  font-weight: 600;
+  animation: slideIn 0.3s ease;
+}
+
+.pincode-status.available {
+  background: #d4edda;
+  color: #155724;
+}
+
+.pincode-status.unavailable {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
