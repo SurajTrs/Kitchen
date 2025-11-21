@@ -15,6 +15,7 @@ app.use(
       "https://foodiii.vercel.app",
       "https://highlight-kitchen.vercel.app",
       "https://highlight-kitchen.netlify.app",
+      "https://kitchencloud-6cm1.onrender.com",
       "*"
     ],
     methods: ["POST", "GET", "PUT", "DELETE"],
